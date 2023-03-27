@@ -7,13 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid RenderTransformOrigin="0.012,0.027">
-        <Button Content="清除" HorizontalAlignment="Left" Margin="114,36,0,0" VerticalAlignment="Top" Height="28" Width="66"/>
-        <Label HorizontalAlignment="Left" Height="25" Margin="114,108,0,0" VerticalAlignment="Top" Width="67" Content="公分"/>
-        <Label Content="公尺" HorizontalAlignment="Left" Height="25" Margin="333,100,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.54,0.614"/>
-        <Label Content="公里" HorizontalAlignment="Left" Height="25" Margin="570,108,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="3.155,0.774"/>
-        <Label HorizontalAlignment="Left" Height="25" Margin="114,217,0,0" VerticalAlignment="Top" Width="67" Content="74" RenderTransformOrigin="0.487,0.486"/>
-        <Label HorizontalAlignment="Left" Height="25" Margin="333,217,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.69,0.638" Content="75\"/>
-        <Label HorizontalAlignment="Left" Height="25" Margin="570,217,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.69,0.638" Content="75\"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="23*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="194*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="153*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnAllClear" Content="清除" HorizontalAlignment="Left" Margin="114,36,0,0" VerticalAlignment="Top" Height="28" Width="66" Click="btnAllClear_Click"/>
+        <Label HorizontalAlignment="Left" Height="30" Margin="114,108,0,0" VerticalAlignment="Top" Width="100" Content="公分" FontSize="16"/>
+        <Label Content="公尺" HorizontalAlignment="Left" Height="30" Margin="333,108,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.54,0.614" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Content="公里" HorizontalAlignment="Left" Height="30" Margin="138,108,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="3.155,0.774" FontSize="16" Grid.Column="1"/>
+        <Label HorizontalAlignment="Left" Height="30" Margin="114,18,0,0" VerticalAlignment="Top" Width="100" Content="英吋" RenderTransformOrigin="0.478,0.902" FontSize="16" Grid.Row="1"/>
+        <Label HorizontalAlignment="Left" Height="30" Margin="333,18,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.69,0.638" Content="英呎" FontSize="16" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label HorizontalAlignment="Left" Height="30" Margin="138,18,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.69,0.638" Content="碼" FontSize="16" Grid.Row="1" Grid.Column="1"/>
+        <Label HorizontalAlignment="Left" Height="30" Margin="114,31,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.69,0.638" Content="說明文字" Grid.Row="2" FontSize="16"/>
+        <TextBox x:Name="txtM" HorizontalAlignment="Left" Height="33" Margin="333,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Grid.ColumnSpan="2" KeyUp="txtM_KeyUp"/>
+        <TextBox x:Name="txtKM" HorizontalAlignment="Left" Height="33" Margin="138,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Grid.Column="1" KeyUp="txtKM_KeyUp"/>
+        <TextBox x:Name="txtFt" HorizontalAlignment="Left" Height="33" Margin="333,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="2" KeyUp="txtFt_KeyUp"/>
+        <TextBox x:Name="txtYard" HorizontalAlignment="Left" Height="33" Margin="138,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Grid.Row="1" Grid.Column="1" KeyUp="txtYard_KeyUp"/>
+        <TextBox x:Name="txtInfo" HorizontalAlignment="Left" Height="39" Margin="114,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="534" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtCM" HorizontalAlignment="Left" Height="33" Margin="114,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" KeyUp="txtCM_KeyUp"/>
+        <TextBox x:Name="txtIn" HorizontalAlignment="Left" Height="32" Margin="114,56,0,0" Grid.RowSpan="2" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" RenderTransformOrigin="0.509,0.488" KeyUp="txtIn_KeyUp"/>
 
     </Grid>
 </Window>
