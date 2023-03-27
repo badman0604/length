@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:length"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.012,0.027">
+        <Button Content="清除" HorizontalAlignment="Left" Margin="114,36,0,0" VerticalAlignment="Top" Height="28" Width="66"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="114,108,0,0" VerticalAlignment="Top" Width="67" Content="公分"/>
+        <Label Content="公尺" HorizontalAlignment="Left" Height="25" Margin="333,100,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.54,0.614"/>
+        <Label Content="公里" HorizontalAlignment="Left" Height="25" Margin="570,108,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="3.155,0.774"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="114,217,0,0" VerticalAlignment="Top" Width="67" Content="74" RenderTransformOrigin="0.487,0.486"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="333,217,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.69,0.638" Content="75\"/>
+        <Label HorizontalAlignment="Left" Height="25" Margin="570,217,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.69,0.638" Content="75\"/>
+
     </Grid>
 </Window>
